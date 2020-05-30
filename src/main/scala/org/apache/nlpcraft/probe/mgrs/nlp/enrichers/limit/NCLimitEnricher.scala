@@ -34,6 +34,7 @@ import scala.collection.{Map, Seq, mutable}
 /**
   * Limit enricher.
   */
+// TODO: this enricher should (probably) extend function enricher
 object NCLimitEnricher extends NCProbeEnricher {
     case class Match(
         limit: Double,
