@@ -19,6 +19,7 @@ on:
   push:
     branches:
       - master
+      - github-actions-windows
   pull_request:
     branches:
       - master
@@ -50,11 +51,5 @@ jobs:
           key: ${{runner.os}}-m2-${{hashFiles('**/pom.xml')}}
           restore-keys: ${{runner.os}}-m2
 
-      - name: Build (Linux)
-        if: ${{matrix.os == 'ubuntu-latest'}}
+      - name: Build
         run: 'mvn -B clean verify'
-
-      - name: Build (Windows)
-        if: ${{matrix.os == 'windows-latest'}}
-        # Build only, no tests because of memory limits.
-        run: 'mvn -B clean package -DskipTests=true'
