@@ -99,7 +99,7 @@
         <maven.jar.plugin.ver>3.1.1</maven.jar.plugin.ver>
         <maven.compiler.plugin.ver>3.8.0</maven.compiler.plugin.ver>
         <maven.enforcer.plugin.ver>1.4.1</maven.enforcer.plugin.ver>
-        <maven.surefire.plugin.ver>2.22.2</maven.surefire.plugin.ver>
+        <maven.surefire.plugin.ver>3.0.0-M4</maven.surefire.plugin.ver>
         <stringmetric.ver>0.27.4</stringmetric.ver>
         <gson.ver>2.8.5</gson.ver>
         <jackson.ver>2.10.1</jackson.ver>
