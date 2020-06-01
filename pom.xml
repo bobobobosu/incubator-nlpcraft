@@ -561,6 +561,10 @@
                             <includes>
                                 <include>**/*.*</include>
                             </includes>
+                            <argLine>
+                                -Xms1G
+                                -Xmx1G
+                            </argLine>
                         </configuration>
                     </execution>
                 </executions>
