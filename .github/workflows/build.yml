@@ -57,5 +57,4 @@ jobs:
 
       - name: Build (Windows)
         if: ${{matrix.os == 'windows-latest'}}
-        # Build only, no tests because of memory limits.
-        run: './mvnw.cmd -B clean package -DskipTests=true -P stanford-corenlp'
+        run: './mvnw.cmd -B clean package -P stanford-corenlp'
