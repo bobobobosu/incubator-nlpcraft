@@ -57,4 +57,4 @@ jobs:
 
       - name: Build (Windows)
         if: ${{matrix.os == 'windows-latest'}}
-        run: './mvnw.cmd -B clean package -P stanford-corenlp'
+        run: './mvnw.cmd -B clean verify -P stanford-corenlp'
